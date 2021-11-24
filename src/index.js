@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './components/tutorial-1/App';
+import App from '../../../JS/tutorial-1/App.js.js';
 
 
 ReactDOM.render(
