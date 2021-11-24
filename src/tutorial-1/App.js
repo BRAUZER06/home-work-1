@@ -1,10 +1,13 @@
 import React from "react";
-import  Profile from './Fuction'
+import ProfileOne from './SimpleComponent'
+import ProfileTwo  from "./StatelessСomponent";
+
 
 function App() {
 
   return <div>
-   <Profile name="Вася Пупкин" registredAt={new Date(2021, 5, 22)} />
+   <ProfileOne name="Вася Пупкин" registredAt={new Date(2021, 5, 22)} />
+   <ProfileTwo name="Вася Пупкин" registredAt={new Date(2021, 5, 22)} />
   </div>;
 }
 
