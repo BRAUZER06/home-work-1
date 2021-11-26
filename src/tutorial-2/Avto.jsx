@@ -19,7 +19,7 @@ function Authorization() {
 function handleSubmit (event){
   event.preventDefault();
 
-  console.log(email, password);
+  console.log({email, password});
 
     if( email === ""|| password===""){
       alert('ты не ввел значение')
