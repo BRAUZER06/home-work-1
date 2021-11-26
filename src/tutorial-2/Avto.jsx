@@ -6,7 +6,7 @@ function Authorization() {
   let email= "";
   let password= "";
 
-  function onChange (event, name ){  
+  function handleChangeInput (event, name ){  
     if( name === 'password'){
       password = event.target.value
     } else email = event.target.value
@@ -28,8 +28,8 @@ function handleSubmit (event){
 
 
       <form onSubmit={handleSubmit}  action="">
-        <input onChange={(e)=>{onChange(e,"email")}} placeholder="E-Mail" type="text" />
-        <input onChange={(e)=>{onChange(e,"password")}} placeholder="Пароль" type="password" />
+        <input onChange={(e)=>{handleChangeInput(e,"email")}}    name="email"    placeholder="E-Mail" type="text" />
+        <input onChange={(e)=>{handleChangeInput(e,"password")}} name="password" placeholder="Пароль" type="password" />
         <button type="submit">Войти</button>
       </form>
 
