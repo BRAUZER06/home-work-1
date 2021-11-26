@@ -1,0 +1,13 @@
+.container>form{
+  display: inline-flex;
+  flex-direction: column;
+}
+.container>form> input, button{
+  margin: 5px;
+  border-radius: 3px;
+  padding: 2px;
+}
+.container>form> button{
+  width: 60px;
+  
+}
