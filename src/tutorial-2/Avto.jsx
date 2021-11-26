@@ -9,7 +9,10 @@ function Authorization() {
   function handleChangeInput (event, name ){  
     if( name === 'password'){
       password = event.target.value
-    } else email = event.target.value
+    }
+    if(name === 'email'){
+      email = event.target.value
+    }
 
   }
 
