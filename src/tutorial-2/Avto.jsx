@@ -28,8 +28,8 @@ function handleSubmit (event){
 
 
       <form onSubmit={handleSubmit}  action="">
-        <input onChange={(e)=>{handleChangeInput(e,"email")}}    name="email"    placeholder="E-Mail" type="text" />
-        <input onChange={(e)=>{handleChangeInput(e,"password")}} name="password" placeholder="Пароль" type="password" />
+        <input onChange={(e)=>{handleChangeInput(e,"email")}}     name="email"    placeholder="E-Mail" type="text" />
+        <input onChange={(e)=>{handleChangeInput(e,"password")}}  name="password" placeholder="Пароль" type="password" />
         <button type="submit">Войти</button>
       </form>
 
