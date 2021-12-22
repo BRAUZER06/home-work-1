@@ -1,5 +1,5 @@
 import React from "react";
-import { hashHistory } from 'react-router';
+
 const Article = ({id}) => {
   return (
     <div>
