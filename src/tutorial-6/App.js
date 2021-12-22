@@ -3,7 +3,7 @@ import Article from "./Article";
 
 export default function App() {
   const { pathname } = window.location;
-
+  const id = pathname.split("/post/")[1];
   console.log(window.location);
 
   return (
@@ -52,9 +52,7 @@ export default function App() {
           </Col>
         </Row>
       )}
-      {
-        pathname.includes("/post/") && <Article id={pathname} /> //  pathname.split('/')[1] === 'post'
-      }
+      {pathname.includes("/post") && <Article id={id} />}
       <br />
       <Navbar bg="light" style={{ paddingLeft: 20 }}>
         <Navbar.Brand href="#home">My site (c) 2021</Navbar.Brand>
