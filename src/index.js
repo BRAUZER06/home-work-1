@@ -11,9 +11,12 @@ import ReactDOM from "react-dom";
 
 // import App from './tutorial-5/App'
 // import App from "./tutorial-5-1/App";
+import App from "./tutorial-6/App";
 
 
-import App from './tutorial-5-2/App'
+
+
+// import App from './tutorial-5-2/App'
 import "./index.css";
 
 ReactDOM.render(
