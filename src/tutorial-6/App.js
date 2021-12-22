@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <div>
-      <div
+      {/* <div
         style={{
           display: "flex",
           justifyContent: "space-between",
@@ -22,7 +22,8 @@ const App = () => {
       {pathname=== '/' && <Article id={" /"}/>}
       {pathname=== '/post/1' && <Article id={" /post/1"}/>}
       {pathname=== '/post/100500' && <Article id={"/post/100500"}/>}
-      {pathname=== '/post/TEST' && <Article id={"/post/TEST"}/>}
+      {pathname=== '/post/TEST' && <Article id={"/post/TEST"}/>} */}
+      {pathname&& <Article id={pathname}/>}
     </div>
   );
 };
