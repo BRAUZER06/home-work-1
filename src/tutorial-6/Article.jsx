@@ -3,7 +3,7 @@ import React from "react";
 const Article = ({id}) => {
   return (
     <div>
-      <h1 style={{width: "600px"}}>Статья № <span style={{color: "red"}}>{id}</span></h1>
+      <h1 style={{width: "600px"}}>Статья № <span style={{color: "red"}}>{id.slice(6)}</span></h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
         distinctio fuga animi aliquam sit id veritatis, doloribus ducimus quas,
