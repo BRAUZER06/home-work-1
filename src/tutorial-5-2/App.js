@@ -29,22 +29,19 @@ const App = () => {
   };
 
   const removeItem = (index) => {
-    const newArr = comments.filter((_, i) =>  index !== i);
+    const newArr = comments.filter((_, i) => index !== i);
     setComments(newArr);
   };
 
   React.useEffect(() => {
-    const comment = JSON.parse(localStorage.getItem('comments')) || [];
+    const comment = JSON.parse(localStorage.getItem("comments")) || [];
     setComments(comment);
   }, []);
-  
+
   React.useEffect(() => {
     localStorage.setItem("comments", JSON.stringify(comments));
   }, [comments]);
 
-
-
-  
   return (
     <div className="container">
       {comments.map((item, index) => (
