@@ -3,10 +3,9 @@ import { StrictMode } from "react";
 import ReactDOM from "react-dom";
 
 
-import {App} from './tutorial-8/App'
-import "./index.css";
-import "bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+import {App} from './tutorial-9/App'
+
+
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
