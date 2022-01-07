@@ -11,12 +11,12 @@ import "./App.css";
 export function App() {
   const [inputSearch, setInputSearch] = React.useState("");
   const [usersGit, setUsersGit] = React.useState([]);
-  const [loading, setUploading] = React.useState(false); //  В этом Стейте в одном булевом значении заложен как input, так и buttn(disable)
+  const [loading, setLoading] = React.useState(false); //  В этом Стейте в одном булевом значении заложен как input, так и buttn(disable)
   const [openBlockInfoGitUser, setOpenBlockInfoGitUser] = React.useState(false);
 
   const clickButtonForm = async (e) => {
     e.preventDefault();
-    setUploading(true);
+    setLoading(true);
     try {
       const respons = await axios.get(
         `https://api.github.com/users/${inputSearch}`
@@ -28,7 +28,7 @@ export function App() {
     } catch (err) {
       alert("Такого пользователя нет!");
     }
-    setUploading(false);
+    setLoading(false);
   };
 
   return (
