@@ -21,10 +21,7 @@ export function App() {
       const respons = await axios.get(
         `https://api.github.com/users/${inputSearch}`
       );
-      if (respons) {
-        setUsersGit(respons.data);
-        setOpenBlockInfoGitUser(true);
-      } 
+      
     } catch (err) {
       alert("Такого пользователя нет!");
     }
